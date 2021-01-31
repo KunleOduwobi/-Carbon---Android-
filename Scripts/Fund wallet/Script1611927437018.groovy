@@ -27,11 +27,11 @@ Mobile.tap(findTestObject('Object Repository/Fund Wallet/android.widget.TextView
 
 Mobile.tap(findTestObject('Object Repository/Fund Wallet/android.widget.TextView - Add money with a debit card'), 5)
 
-if ( 
-Mobile.verifyElementVisible(findTestObject('Fund Wallet/android.widget.Button - Continue'), 5, FailureHandling.OPTIONAL) == true
-) {
-	Mobile.tap(findTestObject('Fund Wallet/android.widget.Button - Continue'), 5)
+if (Mobile.verifyElementVisible(findTestObject('Fund Wallet/android.widget.Button - Continue'), 5, FailureHandling.OPTIONAL) == 
+true) {
+    Mobile.tap(findTestObject('Fund Wallet/android.widget.Button - Continue'), 5)
 }
+
 Mobile.setText(findTestObject('Object Repository/Fund Wallet/android.widget.EditText - 0.00'), '1000', 0)
 
 Mobile.tap(findTestObject('Object Repository/Fund Wallet/android.widget.Button - Proceed'), 5)
@@ -46,15 +46,15 @@ Mobile.tap(findTestObject('Object Repository/Fund Wallet/android.widget.TextView
 
 Mobile.delay(5)
 
-		AndroidDriver<?> driver = MobileDriverFactory.getDriver()
+AndroidDriver<?> driver = MobileDriverFactory.getDriver()
 
-		driver.pressKeyCode(8)
+driver.pressKeyCode(8)
 
-		driver.pressKeyCode(9)
+driver.pressKeyCode(9)
 
-		driver.pressKeyCode(10)
+driver.pressKeyCode(10)
 
-		driver.pressKeyCode(11)
+driver.pressKeyCode(11)
 
 Mobile.verifyElementVisible(findTestObject('Object Repository/Fund Wallet/android.widget.TextView - Wallet is not available to receive funds'), 
     0)
@@ -64,6 +64,4 @@ Mobile.tap(findTestObject('Object Repository/Fund Wallet/android.widget.Button -
 Mobile.pressBack()
 
 Mobile.pressBack()
-
-Mobile.closeApplication()
 

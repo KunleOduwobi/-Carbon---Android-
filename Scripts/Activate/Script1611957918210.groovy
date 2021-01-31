@@ -60,3 +60,16 @@ if (Mobile.verifyElementVisible(findTestObject('Object Repository/Activate/andro
     Mobile.delay(10)
 }
 
+
+Mobile.tap(findTestObject('Object Repository/Activate/android.widget.Button - Apply for a loan'), 0, FailureHandling.OPTIONAL)
+
+Mobile.waitForElementPresent(findTestObject('Object Repository/Activate/android.widget.TextView - Introducing Debit Cards'), 
+    0, FailureHandling.OPTIONAL)
+
+if (Mobile.verifyElementVisible(findTestObject('Object Repository/Activate/android.widget.TextView - Introducing Debit Cards'), 
+    60, FailureHandling.OPTIONAL) == true) {
+    Mobile.tap(findTestObject('Object Repository/Activate/android.widget.Button - Not right now'), 0)
+}
+
+Mobile.verifyElementVisible(findTestObject('Object Repository/Activate/android.widget.Button - Apply for a loan'), 0, FailureHandling.OPTIONAL)
+

@@ -61,8 +61,5 @@ catch (Exception e) {
     println(e)
 } 
 
-
 Mobile.tap(findTestObject('Object Repository/airtime recharge/android.widget.TextView - Done'), 0)
-
-Mobile.closeApplication()
 

@@ -35,16 +35,9 @@ Mobile.tap(findTestObject('Object Repository/View transactions/android.widget.Te
 
 Mobile.tap(findTestObject('Object Repository/View transactions/android.widget.TextView - Outgoing'), 0)
 
-if ( 
-Mobile.verifyElementVisible(findTestObject('Object Repository/View transactions/android.widget.TextView - No network available, please check your WiFi or Data connection'), 
+if (Mobile.verifyElementVisible(findTestObject('Object Repository/View transactions/android.widget.TextView - No network available, please check your WiFi or Data connection'), 
     0, FailureHandling.OPTIONAL) || Mobile.verifyElementVisible(findTestObject('Object Repository/View transactions/android.widget.TextView - Unable to retrieve records'), 
-    0, FailureHandling.OPTIONAL)
-
-) {
-	
-	Mobile.tap(findTestObject('Object Repository/View transactions/android.widget.Button - OKAY'), 0)
+    0, FailureHandling.OPTIONAL)) {
+    Mobile.tap(findTestObject('Object Repository/View transactions/android.widget.Button - OKAY'), 0)
 }
-
-
-Mobile.closeApplication()
 

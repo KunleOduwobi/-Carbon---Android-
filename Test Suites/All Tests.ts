@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>ALL Tests</name>
+   <name>All Tests</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -11,6 +11,12 @@
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>05891c3c-7f8f-44dc-b3e9-3cfdbced9ef1</testSuiteGuid>
+   <testCaseLink>
+      <guid>00f06506-f981-48e6-aba0-9c3159554f83</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Activate</testCaseId>
+   </testCaseLink>
    <testCaseLink>
       <guid>45a9b0a6-6b23-4642-8ca3-4e100107ce3f</guid>
       <isReuseDriver>false</isReuseDriver>
